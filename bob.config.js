@@ -1,7 +1,5 @@
 const path = require('path');
 
-console.log(path.resolve(__dirname, 'bob.babel.config.js'));
-
 module.exports = {
   source: 'src',
   output: 'lib',
@@ -9,8 +7,8 @@ module.exports = {
     [
       'module',
       {
-        esm: true,
-        jsxRuntime: 'classic',
+        esm: false,
+        jsxRuntime: 'automatic',
         configFile: path.resolve(__dirname, 'bob.babel.config.js'),
       },
     ],
