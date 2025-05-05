@@ -4,9 +4,9 @@ const bobBabelDefaultsFactory = require('react-native-builder-bob/babel-preset')
 const bobDefaults = bobBabelDefaultsFactory(
   undefined, // unused
   {
-    // modules: 'preserve',
-    esm: true,
-    jsxRuntime: 'classic',
+    supportsStaticESM: true,
+    rewriteImportExtensions: false,
+    jsxRuntime: 'automatic',
   },
   process.cwd()
 );
